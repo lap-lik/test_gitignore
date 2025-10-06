@@ -1,0 +1,23 @@
+services:
+  user-db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - user_data:/var/lib/postgresql/data
+
+  user-service:
+    build: .
+    environment:
+      - DB_CONNECTION_STRING=Host=user-db;Port=5432;Database=${DB_NAME};UserId=${DB_USER};Password=${DB_PASSWORD}
+    depends_on:
+      - user-db
+    ports:
+      - "5000:5000"
+
+volumes:
+  user_data:
