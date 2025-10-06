@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{831295F1-EF12-48DC-89B3-54649546143F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{9B7A6E5D-7749-4ADF-9E00-18C1A6460408}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{CF75BAC8-4D3B-4526-A7BC-15654E2ED3F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F4BEF8FB-CC4B-4941-BDA9-6A53197EDB18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersDomain", "src\Users\Domain\UsersDomain\UsersDomain.csproj", "{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Hosts.Migrator", "src\Users\Hosts\Users.Hosts.Migrator\Users.Hosts.Migrator.csproj", "{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B7A6E5D-7749-4ADF-9E00-18C1A6460408} = {831295F1-EF12-48DC-89B3-54649546143F}
+		{CF75BAC8-4D3B-4526-A7BC-15654E2ED3F4} = {9B7A6E5D-7749-4ADF-9E00-18C1A6460408}
+		{F4BEF8FB-CC4B-4941-BDA9-6A53197EDB18} = {9B7A6E5D-7749-4ADF-9E00-18C1A6460408}
+		{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6} = {F4BEF8FB-CC4B-4941-BDA9-6A53197EDB18}
+		{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4} = {CF75BAC8-4D3B-4526-A7BC-15654E2ED3F4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5A9F44-FA09-4CC1-B2D0-0E71AA2232B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CA0E02-6FAA-4CC2-8036-BD93C4E5D6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
